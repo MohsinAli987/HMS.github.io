@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Doctor Data</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <style>
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+        
+         ::placeholder {
+            color: rgba(255, 0, 0, 0.589);
+            opacity: 1;
+        }
+        
+        .viewdata-of-doctor {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #btn-doc-design {
+            margin: 20px 0 20px 10px;
+            background-image: linear-gradient(to right, #6a01e2, #dd3d73);
+            width: 9%;
+            height: 36px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .doctorform {
+            display: flex;
+            width: 29%;
+            flex-direction: column;
+            margin: 30px auto;
+            padding-bottom: 0px;
+            align-items: center;
+        }
+        
+        .textfield {
+            font-size: 17px;
+            padding: 2px;
+            margin-bottom: 4px;
+            background: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        
+        .submitdoctor-form {
+            width: 19%;
+            height: 36px;
+            margin-top: 8px;
+            border-radius: 8px;
+            background-color: rgba(224, 110, 110, 0.76);
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .submitdoctor-form:hover {
+            cursor: pointer;
+            font-size: 1.2rem;
+            background-color: rgba(243, 23, 23, 0.76);
+        }
+        
+        .hero123 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(./img/updatepic.jpg);
+            margin-top: -32px;
+            background-position: bottom;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        .deletetext h2 {
+            font-size: 30px;
+            margin-bottom: 6px;
+            text-underline-position: under;
+            text-decoration: underline;
+            text-decoration-color: #ff000085;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./img/onlinelogomaker-042821-0331-2772-2000-transparent.png" alt="hospital logo" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Doctor</a>
+                <ul class="dropdown">
+                    <li><a href="doctor.html">Doctor Data</a></li>
+                    <li><a href="updatedoctor.html">Update Doctor Data</a></li>
+                    <li><a href="Deletedatadoctor.html">Delete Doctor Data</a></li>
+                    <li><a href="view doctordata.html">View doctor Data</a></li>
+                </ul>
+            </li>
+            <li><a href="">Patient</a>
+                <ul class="dropdown">
+                    <li><a href="patient.html">Patient Data</a></li>
+                    <li><a href="patientupdate.html">Update Patient Data</a></li>
+                    <li><a href="patientdelete.html">Delete Patient Data</a></li>
+                    <li><a href="patientview.html">View Patient Data</a></li>
+                </ul>
+            </li>
+            <li><a href="">About Us</a>
+                <ul>
+                    <li><a href="Aboutus.html">our mission</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+
+                </ul>
+            </li>
+            <li><a href="contactus.html">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="hero123">
+        <div class="deletetext">
+            <h2>Enter Doctor ID To Delete Data</h2>
+        </div>
+        <form class="doctorform">
+            <div>
+                <input type="text" class="textfield" placeholder="Enter your id">
+
+            </div>
+
+            <button type="submit" class="submitdoctor-form">Delete</button>
+        </form>
+    </div>
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="footer-heading first">
+                <h2>About us</h2>
+                <a href="Aboutus.html">Our Mission</a>
+                <a href="FAQs.html">FAQs</a>
+
+            </div>
+            <div class="footer-heading secound">
+                <h2>Contact us</h2>
+                <i id="contactusimg2" class="fas fa-user"></i>
+                <p>CDA Hospital</p>
+                <i id="contactusimg2" class="fas fa-phone-volume"></i>
+                <p>+92-(051) 9221334</p>
+                <i id="contactusimg2" class="fas fa-mobile"></i>
+                <p>+92-51-111-644-911</p>
+                <i id="contactusimg2" class="fas fa-mail-bulk"></i>
+                <p>
+                    <a href="mailto:webmaster.ch@cda.gov.pk">webmaster.ch@cda.gov.pk</a>
+                </p>
+                <i id="contactusimg2" class="fas fa-map-marker-alt"></i>
+
+                <p>
+                    </span>Street 31, G-6/2, Islamabad,<br> Islamabad Capital Territory 46000</span>
+                </p>
+                <a id="googlemapopeninnewwindow" href="https://goo.gl/maps/GXryD4Y1W6mF38fJA" target="_blank">
+                    <H5>Click here to open a map in new window-></H5>
+                </a>
+            </div>
+            <div class="footer-heading third">
+                <h2>Social Media</h2>
+                <div class="setsocialmediaicon">
+                    <a href="https://m.facebook.com/profile.php?id=183169055198545" target="_blank" id="socialmediaicon" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/cdathecapital" target="_blank" id="socialmediaicon" class="fab fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                copyright &copy; 2021 - Mohsin Ali/ Ahsan Musafir / Abdullah Abid Abbasi
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
